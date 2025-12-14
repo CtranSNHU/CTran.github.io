@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christian Tran | Computer Science ePortfolio</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2937;
+      --card: #f3f4f6;
+      --accent: #2563eb;
+    }
+
+    body.dark {
+      --bg: #0f172a;
+      --text: #e5e7eb;
+      --card: #1e293b;
+      --accent: #60a5fa;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #334155;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      background-color: var(--accent);
+      color: white;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--card);
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Christian Tran</h1>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Professional Self-Assessment</h2>
+      <p>
+        I am a Computer Science student with hands-on experience in software engineering, algorithms and data structures,
+        and database-driven applications. Through my coursework and ePortfolio development, I have strengthened my
+        ability to design scalable systems, analyze algorithmic efficiency, and build data-driven applications that
+        provide real-world value. This portfolio highlights my growth across the program and my readiness to enter
+        the software development field.
+      </p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+
+        <div class="card">
+          <img src="project1.png" alt="3D Office Scene" />
+          <h3>Software Design & Engineering</h3>
+          <p><strong>CS 330: Computational Graphics and Visualization</strong></p>
+          <p>
+            An OpenGL-based 3D office environment demonstrating modular design, shader programming,
+            camera navigation, and lighting techniques. Enhancements include refactored object-oriented
+            structure, dynamic lighting, and texture mapping for improved realism.
+          </p>
+          <a href="https://github.com/CT-byte3/CS-330-Final-Project.git">View on GitHub</a>
+        </div>
+
+        <div class="card">
+          <img src="project2.png" alt="Algorithms and Data Structures Project" />
+          <h3>Algorithms & Data Structures</h3>
+          <p><strong>CS 320: Algorithms and Data Structures</strong></p>
+          <p>
+            A service-based Java application managing contacts, tasks, and appointments. Enhancements
+            replaced list-based storage with hash maps for O(1) lookups and added efficient sorting
+            algorithms to improve scalability and performance.
+          </p>
+          <a href="https://github.com/CT-byte3/CS-320-Final-Project.git">View on GitHub</a>
+        </div>
+
+        <div class="card">
+          <img src="project3.png" alt="MongoDB Dashboard" />
+          <h3>Databases</h3>
+          <p><strong>CS 340: MongoDB Animal Rescue Dashboard</strong></p>
+          <p>
+            A MongoDB-powered dashboard for managing and visualizing animal rescue data.
+            Enhancements include full-stack integration using Flask, interactive filtering,
+            real-time data visualization, and complete CRUD functionality.
+          </p>
+          <a href="https://github.com/CT-byte3/CS-340-Animal-Shelter.git">View on GitHub</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Christian Tran | Computer Science ePortfolio
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
