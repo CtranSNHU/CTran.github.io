@@ -1,159 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Christian Tran | Computer Science ePortfolio</title>
-  <style>
-    :root {
-      --bg: #ffffff;
-      --text: #1f2937;
-      --card: #f3f4f6;
-      --accent: #2563eb;
-    }
-
-    body.dark {
-      --bg: #0f172a;
-      --text: #e5e7eb;
-      --card: #1e293b;
-      --accent: #60a5fa;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    header {
-      padding: 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #334155;
-    }
-
-    header h1 {
-      margin: 0;
-    }
-
-    button {
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      border: none;
-      cursor: pointer;
-      background-color: var(--accent);
-      color: white;
-    }
-
-    main {
-      padding: 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .card {
-      background-color: var(--card);
-      padding: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-
-    .card h3 {
-      margin-top: 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Tran | Computer Science ePortfolio</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        header {
+            background: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        .artifact {
+            background: #1e1e1e;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        }
+        img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1f1f1f;
+            border-top: 1px solid #333;
+        }
+        a {
+            color: #4da3ff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <header>
+
+<header>
     <h1>Christian Tran</h1>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-  </header>
+    <p>Computer Science ePortfolio</p>
+</header>
 
-  <main>
-    <section>
-      <h2>Professional Self-Assessment</h2>
-      <p>
-        I am a Computer Science student with hands-on experience in software engineering, algorithms and data structures,
-        and database-driven applications. Through my coursework and ePortfolio development, I have strengthened my
-        ability to design scalable systems, analyze algorithmic efficiency, and build data-driven applications that
-        provide real-world value. This portfolio highlights my growth across the program and my readiness to enter
-        the software development field.
-      </p>
-    </section>
+<section id="introduction">
+    <h2>Introduction</h2>
+    <p>
+        This ePortfolio highlights my growth throughout the Computer Science program and showcases
+        my technical skills through carefully selected and enhanced projects. Each artifact
+        demonstrates my ability to design, analyze, and improve software solutions with a focus on
+        real-world problem solving, efficiency, and maintainability.
+    </p>
+</section>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="projects">
+<section id="code-review">
+    <h2>Code Review Overview</h2>
+    <p>
+        Prior to enhancing each artifact, I conducted a structured code review to evaluate existing
+        functionality, identify areas for improvement, and plan targeted enhancements. This process
+        allowed me to assess code quality, efficiency, data handling, and architectural decisions
+        while aligning each enhancement with program learning outcomes.
+    </p>
+    <p>
+        The code review phase emphasized refactoring opportunities, performance improvements, and
+        scalability concerns. By documenting weaknesses and improvement strategies early, I was able
+        to approach enhancements methodically and ensure that changes provided measurable technical
+        value rather than superficial modifications.
+    </p>
+</section>
 
-        <div class="card">
-          <img src="project1.png" alt="3D Office Scene" />
-          <h3>Software Design & Engineering</h3>
-          <p><strong>CS 330: Computational Graphics and Visualization</strong></p>
-          <p>
-            An OpenGL-based 3D office environment demonstrating modular design, shader programming,
-            camera navigation, and lighting techniques. Enhancements include refactored object-oriented
-            structure, dynamic lighting, and texture mapping for improved realism.
-          </p>
-          <a href="https://github.com/CT-byte3/CS-330-Final-Project.git">View on GitHub</a>
-        </div>
+<section id="artifacts">
+    <h2>Artifacts</h2>
 
-        <div class="card">
-          <img src="project2.png" alt="Algorithms and Data Structures Project" />
-          <h3>Algorithms & Data Structures</h3>
-          <p><strong>CS 320: Algorithms and Data Structures</strong></p>
-          <p>
-            A service-based Java application managing contacts, tasks, and appointments. Enhancements
-            replaced list-based storage with hash maps for O(1) lookups and added efficient sorting
-            algorithms to improve scalability and performance.
-          </p>
-          <a href="https://github.com/CT-byte3/CS-320-Final-Project.git">View on GitHub</a>
-        </div>
+    <div class="artifact">
+        <h3>Algorithms and Data Structures – CS 320 Final Project</h3>
+        <p>
+            This artifact consists of service-based classes used to manage contacts, tasks, and
+            appointments. The original implementation relied primarily on list-based storage and
+            linear searches to manage data. While functional, this design presented scalability
+            limitations as data volume increased.
+        </p>
+        <p>
+            I selected this artifact because it clearly demonstrates foundational algorithmic
+            concepts and provides an ideal opportunity to showcase performance optimization through
+            improved data structures and sorting algorithms.
+        </p>
+        <img src="project1.png" alt="CS 320 Project Screenshot">
+    </div>
 
-        <div class="card">
-          <img src="project3.png" alt="MongoDB Dashboard" />
-          <h3>Databases</h3>
-          <p><strong>CS 340: MongoDB Animal Rescue Dashboard</strong></p>
-          <p>
-            A MongoDB-powered dashboard for managing and visualizing animal rescue data.
-            Enhancements include full-stack integration using Flask, interactive filtering,
-            real-time data visualization, and complete CRUD functionality.
-          </p>
-          <a href="https://github.com/CT-byte3/CS-340-Animal-Shelter.git">View on GitHub</a>
-        </div>
+    <div class="artifact">
+        <h3>Databases – CS 340 Animal Rescue Dashboard</h3>
+        <p>
+            This project is a MongoDB-driven web dashboard designed to manage and visualize animal
+            rescue data. It implements full CRUD functionality and allows users to interact with a
+            NoSQL database through a user-facing interface.
+        </p>
+        <p>
+            This artifact was selected because it demonstrates my ability to integrate databases with
+            application logic and user interfaces, making complex datasets accessible and actionable
+            through filtering and visualization.
+        </p>
+        <img src="project2.png" alt="CS 340 Project Screenshot">
+    </div>
 
-      </div>
-    </section>
-  </main>
+    <div class="artifact">
+        <h3>Software Design and Engineering – 3D Office Scene</h3>
+        <p>
+            This artifact focuses on software architecture and graphical rendering using modular
+            object-oriented design. The project demonstrates scene organization, rendering logic,
+            and reusable components within a graphics application.
+        </p>
+        <p>
+            It was chosen to represent my growth in software design principles, modularization, and
+            maintainable code structures within a more complex system.
+        </p>
+        <img src="project3.png" alt="3D Office Scene Screenshot">
+    </div>
+</section>
 
-  <footer>
-    © 2025 Christian Tran | Computer Science ePortfolio
-  </footer>
+<section id="enhancements">
+    <h2>Enhancements and Learning Outcomes</h2>
+    <p>
+        Across all artifacts, enhancements focused on improving efficiency, scalability, and user
+        experience. In the algorithms artifact, I replaced list-based storage with hash maps to
+        achieve constant-time lookups and implemented efficient sorting algorithms to improve data
+        organization.
+    </p>
+    <p>
+        For the database artifact, I expanded the project into a full-stack application by
+        integrating a Flask backend with an interactive HTML and JavaScript frontend. This enabled
+        real-time filtering, advanced querying, and data visualization using MongoDB.
+    </p>
+    <p>
+        Through these enhancements, I strengthened my understanding of algorithmic analysis,
+        database integration, full-stack development, and professional software engineering
+        practices. These projects collectively demonstrate my readiness to design, analyze, and
+        implement scalable computer science solutions.
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Christian Tran | GitHub Pages ePortfolio</p>
+</footer>
 
   <script>
     function toggleDarkMode() {
